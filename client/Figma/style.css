@@ -59,50 +59,26 @@ background: none;
   width: 33px;
   height: 27px;
 }
+
+.friend-1Txt {
+  color: #ffffff;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  right: 200px;
+  top: 946px;
+}
 .friend-1 {
-  position: absolute;
-  inset: 0;
-}
-.friend-12 {
-  color: #ffffff;
-  text-align: left;
-  font-size: 13px;
-  font-weight: 400;
-  position: absolute;
-  left: 1232px;
-  top: 946px;
-}
-.friend-13 {
   background: #d9d9d9;
   border-radius: 50%;
   width: 57px;
   height: 57px;
   position: absolute;
-  left: 1230px;
+  right: 200px;
   top: 883px;
 }
-.friend-2 {
-  position: absolute;
-  inset: 0;
-}
-.friend-22 {
-  color: #ffffff;
-  text-align: left;
-  font-size: 13px;
-  font-weight: 400;
-  position: absolute;
-  left: 1151px;
-  top: 946px;
-}
-.friend-14 {
-  background: #d9d9d9;
-  border-radius: 50%;
-  width: 57px;
-  height: 57px;
-  position: absolute;
-  left: 1149px;
-  top: 883px;
-}
+
 .asteroid-group {
   position: absolute;
   inset: 0;
