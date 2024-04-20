@@ -4,21 +4,14 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+const connectDB = require("./config/db");
 const auth = require("./config/auth");
-
-mongoose.connect(process.env.DB_URI)
-    .catch((error) => {
-        console.log(`MongoDB failed to connect...`);
-    });
-
-mongoose.connection.on("error", (error) => {
-    console.log(error);
-});
 
 const apiRoutes = require("./routes/api");
 
-
 const app = express();
+
+connectDB(process.env.DB_URI);
 
 // configure middleware
 app.use(cors());
