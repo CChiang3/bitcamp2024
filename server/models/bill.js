@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const paymentSchema = new mongoose.Schema({
+const billScheme = new mongoose.Schema({
     user: {
         type: mongoose.Schema.ObjectId,
         required: true
@@ -27,6 +27,6 @@ const paymentSchema = new mongoose.Schema({
     }
 });
 
-const Payment = new mongoose.model('payment', paymentSchema);
+const Bill = new mongoose.model('bill', billScheme);
 
-module.exports = Payment;
+module.exports = Bill;
