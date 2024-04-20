@@ -36,13 +36,17 @@ background: none;
   position: absolute;
   inset: 0;
 }
+
+.you, .user2 {
+  right: 100px;
+}
+
 .user2 {
   background: #d9d9d9;
   border-radius: 50%;
   width: 69px;
   height: 69px;
   position: absolute;
-  left: 1400px;
   top: 877px;
 }
 .you {
@@ -51,7 +55,6 @@ background: none;
   font-size: 15px;
   font-weight: 400;
   position: absolute;
-  left: 1421px;
   top: 903px;
   width: 33px;
   height: 27px;
@@ -551,7 +554,7 @@ background: none;
   top: 37px;
   overflow: visible;
 }
-.bill-a-bill-b-bill-c-bill-d-bill-e {
+.billList {
   color: #000000;
   text-align: left;
   font-size: 48px;
@@ -568,42 +571,24 @@ background: none;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
-  left: 1334px;
-  top: 794px;
+  right: 200px;
+  bottom: 130px;
   width: 115px;
   height: 32px;
 }
-.status-bar {
-  border-radius: 0px;
-  width: 54px;
-  height: 692px;
-  position: absolute;
-  left: 1395px;
-  top: 87px;
-  overflow: visible;
-}
+
 .day-31 {
   color: #ffffff;
   text-align: right;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
-  left: 1334px;
-  top: 40px;
+  right: 200px;
+  top: 135px;
   width: 115px;
   height: 32px;
 }
-.status {
-  color: #ffffff;
-  text-align: right;
-  font-size: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 1492px;
-  top: 392px;
-  transform-origin: 0 0;
-  transform: rotate(90deg) scale(1, 1);
-}
+
 .ledger-launchpad {
   color: #ffffff;
   text-align: left;
@@ -614,4 +599,39 @@ background: none;
   top: 26px;
   width: 668px;
   height: 77px;
+}
+
+.status {
+  color: #ffffff;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 5px;
+  top: 392px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+
+.statusContainer {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  right: 120px; /* Distance from right side of the screen */
+  transform: translateY(-50%); /* Center vertically */
+  width: 40px; /* Width of the container */
+  height: 700px; /* Height of the container */
+  border: 1px solid #ccc;
+}
+
+.statusBar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  transform-origin: bottom; /* Rotate around the bottom */
+  transform: scaleY(0); /* Initially scale to 0 height */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for height change */
 }
