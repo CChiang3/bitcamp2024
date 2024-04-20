@@ -1,96 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vars.css">
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./nusrat.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ledger Launchpad</title>
+  </head>
+  <body>
 
-  <title>Document</title>
-</head>
-<body>
-  <script src="script.js"></script> 
-  <div class="home-game-ui">
-    <div class="user2"></div>
-    <div class="you">You</div>
-    <div class="friend-1Txt">Friend1</div>
-    <div class="friend-1"></div>
-    <div class="asteroid-5">
-      <img class="astroid-vectors" src="astroid-vectors0.svg">
-      <div class="b">B</div>
-      <div class="i">i</div>
-      <div class="l">l</div>
-      <div class="l2">l</div>
-      <div class="div"> </div>
-      <div class="e">E</div>
-    </div>
-    <div class="asteroid-4">
-      <img class="astroid-vectors2" src="astroid-vectors1.svg">
-      <div class="b2">B</div>
-      <div class="i2">i</div>
-      <div class="l3">l</div>
-      <div class="l4">l</div>
-      <div class="div2"> </div>
-      <div class="d">D</div>
-    </div>
-    <div class="asteroid-3">
-      <img class="astroid-vectors3" src="astroid-vectors2.svg" />
-      <div class="b">B</div>
-      <div class="i">i</div>
-      <div class="l">l</div>
-      <div class="l2">l</div>
-      <div class="div"> </div>
-      <div class="c">C</div>
-    </div>
-    <div class="asteroid-2">
-      <img class="astroid-vectors4" src="astroid-vectors3.svg" />
-      <div class="b3">B</div>
-      <div class="i3">i</div>
-      <div class="l5">l</div>
-      <div class="l6">l</div>
-      <div class="div3"> </div>
-      <div class="b4">
-        B
-        <br />
-      </div>
-    </div>
-    <div class="asteroid-1">
-      <img class="astroid-vectors5" src="astroid-vectors4.svg">
-      <div class="b3">B</div>
-      <div class="i3">i</div>
-      <div class="l5">l</div>
-      <div class="l6">l</div>
-      <div class="div3"> </div>
-      <div class="a">A</div>
-    </div>
-    <div class="bill-frame">
-      <div class="bill-list-bg"></div>
-      <div class="bill-list">Bill List</div>
-      <img class="collpase-arrrows" src="collpase-arrrows0.svg">
-      <div class="billList">
-        <ul>
-          <li>Bill A</li>
-          <li>Bill B</li>
-          <li>Bill C</li>
-          <li>Bill D</li>
-          <li>Bill E</li>
-        </ul>
-      </div>
-    </div>
-    <div class="day-1">Day 1</div>
+    <h1>Ledger Launchpad</h1>
 
-    <div class="statusContainer">
-      <div class="statusBar">
+    <div class="rectangle">
+      <button id="editButton">Click To Add Bill</button>
+      <form id="billForm" style="display: none;">
+        <label for="billName">Bill Name:</label>
+        <input type="text" id="billName" name="billName" required><br><br>
+        <label for="billAmount">Bill Amount:</label>
+        <input type="number" id="billAmount" name="billAmount" required><br><br>
+        <button id="submitButton" type="submit">Submit</button>
+      </form>
 
-      </div>
+      <script>
+        const editButton = document.getElementById('editButton');
+        const billForm = document.getElementById('billForm');
+
+        editButton.addEventListener('click', () => {
+          billForm.style.display = 'block';
+        });
+
+        billForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const billName = document.getElementById('billName').value;
+          const billAmount = document.getElementById('billAmount').value;
+
+          const newBill = document.createElement('p');
+          newBill.textContent = `${billName}: $${billAmount}`;
+          document.querySelector('.rectangle').appendChild(newBill);
+
+          billForm.reset();
+          billForm.style.display = 'none';
+        });
+
+      </script>
+    
     </div>
 
-    <div class="day-31">Day 31</div>
-    <div class="status">Status</div>
-    <div class="ledger-launchpad">Ledger Launchpad</div>
-  </div>
-  
-</body>
+  </body>
 </html>
