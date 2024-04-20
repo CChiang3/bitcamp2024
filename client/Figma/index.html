@@ -11,9 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
     <title>Ledger Launchpad</title>
   </head>
   <body>
+    <script src="backgroundCopy.js"></script> 
 
     <h1>Ledger Launchpad</h1>
 
@@ -22,14 +24,22 @@
       <form id="billForm" style="display: none;">
         <label for="billName">Bill Name:</label>
         <input type="text" id="billName" name="billName" required><br><br>
+      
         <label for="billAmount">Bill Amount:</label>
         <input type="number" id="billAmount" name="billAmount" required><br><br>
+      
+        <label for="dueDate">Due Date:</label>
+        <input type="number" id="dueDate" name="dueDate" required><br><br>
+      
         <button id="submitButton" type="submit">Submit</button>
       </form>
+      
+      <div id="billList"></div> <!-- Container for bills -->
 
       <script>
         const editButton = document.getElementById('editButton');
         const billForm = document.getElementById('billForm');
+        const billList = document.getElementById('billList');
 
         editButton.addEventListener('click', () => {
           billForm.style.display = 'block';
@@ -39,10 +49,11 @@
           e.preventDefault();
           const billName = document.getElementById('billName').value;
           const billAmount = document.getElementById('billAmount').value;
+          const billDueDate = document.getElementById('dueDate').value;
 
           const newBill = document.createElement('p');
-          newBill.textContent = `${billName}: $${billAmount}`;
-          document.querySelector('.rectangle').appendChild(newBill);
+          newBill.textContent = `${billName}: Amt: $${billAmount} Due: ${billDueDate}`;
+          billList.appendChild(newBill); // Append new bill to billList container
 
           billForm.reset();
           billForm.style.display = 'none';
