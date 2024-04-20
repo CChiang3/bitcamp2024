@@ -1,3 +1,7 @@
+body {
+  font-family: "Share Tech Mono", sans-serif;
+}
+
 .home-game-ui,
 .home-game-ui * {
   box-sizing: border-box;
@@ -24,7 +28,6 @@
 .you {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 15px;
   font-weight: 400;
   position: absolute;
@@ -40,7 +43,6 @@
 .friend-12 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -63,7 +65,6 @@
 .friend-22 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 13px;
   font-weight: 400;
   position: absolute;
@@ -108,7 +109,6 @@
 .b {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -124,7 +124,6 @@
 .i {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -140,7 +139,6 @@
 .l {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -156,7 +154,6 @@
 .l2 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -172,7 +169,6 @@
 .div {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -188,7 +184,6 @@
 .e {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -226,7 +221,6 @@
 .b2 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -242,7 +236,6 @@
 .i2 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -258,7 +251,6 @@
 .l3 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -274,7 +266,6 @@
 .l4 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -290,7 +281,6 @@
 .div2 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -306,7 +296,6 @@
 .d {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -344,7 +333,6 @@
 .c {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -382,7 +370,6 @@
 .b3 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -398,7 +385,6 @@
 .i3 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -414,7 +400,6 @@
 .l5 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -430,7 +415,6 @@
 .l6 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -446,7 +430,6 @@
 .div3 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -462,7 +445,6 @@
 .b4 {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -500,7 +482,6 @@
 .a {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -535,7 +516,6 @@
 .bill-list {
   color: #000000;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 48px;
   font-weight: 400;
   position: absolute;
@@ -554,7 +534,6 @@
 .bill-a-bill-b-bill-c-bill-d-bill-e {
   color: #000000;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 48px;
   font-weight: 400;
   position: absolute;
@@ -566,7 +545,6 @@
 .day-1 {
   color: #ffffff;
   text-align: right;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -587,7 +565,6 @@
 .day-31 {
   color: #ffffff;
   text-align: right;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -599,7 +576,6 @@
 .status {
   color: #ffffff;
   text-align: right;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
@@ -611,7 +587,6 @@
 .ledger-launchpad {
   color: #ffffff;
   text-align: left;
-  font-family: "FiraMono-Regular", sans-serif;
   font-size: 64px;
   font-weight: 400;
   position: absolute;
