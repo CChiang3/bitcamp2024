@@ -1,0 +1,182 @@
+.friend1 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+}
+.friend2 {
+  position: relative;
+  display: inline-block;
+  min-width: 55px;
+}
+.friend-pair1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-11xs);
+}
+.friend-pair,
+.friend11 {
+  align-self: stretch;
+  flex: 1;
+}
+.friend-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.friend11 {
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+}
+.friend12 {
+  position: relative;
+  display: inline-block;
+  min-width: 55px;
+}
+.friend1-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-11xs);
+}
+.friend-pair2 {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-7xs);
+}
+.friend-list-inner,
+.friend-pair-parent,
+.friend-pair2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.friend-pair-parent {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  gap: 24px;
+}
+.friend-list-inner {
+  height: 85px;
+  width: 138px;
+  flex-direction: column;
+  padding: 6px 0 0;
+  box-sizing: border-box;
+}
+.user,
+.you {
+  position: absolute;
+}
+.user {
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  width: 100%;
+  height: 100%;
+}
+.you {
+  top: 26px;
+  left: 21px;
+  display: inline-block;
+  width: 33px;
+  height: 27px;
+  z-index: 1;
+}
+.create-own-label {
+  height: 69px;
+  width: 69px;
+  position: relative;
+  font-size: 15px;
+}
+.friend-list,
+.friends {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.friend-list {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.friends {
+  width: 366px;
+  justify-content: flex-end;
+  padding: 0 23px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.asteroid-nav,
+.homegame-ui,
+.ledger {
+  display: flex;
+  justify-content: flex-start;
+}
+.asteroid-nav {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 54px;
+  max-width: 100%;
+}
+.homegame-ui,
+.ledger {
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.ledger {
+  flex: 1;
+  flex-direction: column;
+  padding: 26px 0 0;
+  min-width: 681px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-white);
+  font-family: var(--font-fira-mono);
+}
+.homegame-ui {
+  width: 100%;
+  position: relative;
+  background-color: #03011d;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: 43px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .homegame-ui {
+    flex-wrap: wrap;
+    padding-left: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .asteroid-nav {
+    gap: 27px;
+  }
+  .ledger {
+    min-width: 100%;
+  }
+  .homegame-ui {
+    gap: var(--gap-2xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .friend-list {
+    flex-wrap: wrap;
+  }
+}
