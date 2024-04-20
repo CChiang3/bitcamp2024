@@ -4,6 +4,8 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+const auth = require("./config/auth");
+
 mongoose.connect(process.env.DB_URI)
     .catch((error) => {
         console.log(`MongoDB failed to connect...`);
