@@ -18,18 +18,25 @@ const userSchema = new mongoose.Schema({
             type: mongoose.Schema.ObjectId,
             ref: "payment"
         }],
-        require: true
+        require: true,
+        default: []
     },
     friends: {
         type: [{
             type: mongoose.Schema.ObjectId,
             ref: "user"
         }],
-        require: true
+        require: true,
+        default: []
     },
     points: {
         type: Number,
-        require: true
+        require: true,
+        default: 0
+    },
+    created: {
+        type: Date,
+        default: Date.now
     }
 });
 

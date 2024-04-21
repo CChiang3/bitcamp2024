@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
 const billScheme = new mongoose.Schema({
+    uniquifier: {
+        type: String,
+        required: true,
+        unique: true
+    },
     user: {
         type: mongoose.Schema.ObjectId,
         required: true
@@ -24,6 +29,10 @@ const billScheme = new mongoose.Schema({
     },
     amount: {
         type: Number
+    },
+    created: {
+        type: Date,
+        default: Date.now
     }
 });
 
