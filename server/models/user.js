@@ -13,10 +13,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         require: true
     },
-    payments: {
+    bills: {
         type: [{
             type: mongoose.Schema.ObjectId,
-            ref: "payment"
+            ref: "bill"
         }],
         require: true,
         default: []
