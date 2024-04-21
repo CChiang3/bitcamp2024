@@ -1,0 +1,130 @@
+body {
+    background-color: #010125;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-right: 400px;
+    padding-top: 10px;
+}
+
+.rectangle {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    background-color: #d5d1d1;
+    padding: 20px;
+  }
+
+#editButton {
+    background-color: rgb(192, 188, 188);
+    font-size: 35px;
+    position: absolute;
+    top: 20px; 
+    left: 95px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#submitButton {
+    background-color: rgb(192, 188, 188);
+    font-size: 35px;
+    position: absolute;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#billForm {
+    position: absolute;
+    bottom: 100px;
+    font-size: 25px;
+}
+
+#billList {
+    position: absolute;
+    top: 100px;
+    font-size: 25px;
+}
+
+#asteroidContainer {
+    position: absolute;
+    top: 100px; 
+    left: 500px; 
+    z-index: 1; 
+    overflow: hidden;
+}
+
+.asteroidImg {
+    width: 275px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.statusContainer {
+    width: 50px; /* Width of the progress bar */
+    height: 775px; /* Height of the progress bar */
+    background-color: #ffffff21;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    overflow: hidden;
+}
+
+.statusBar {
+    width: 100%;
+    background-color: #4caf50;
+    transition: height 0.3s ease; /* Smooth height transition */
+}
+
+.sidewaysContainer {
+    position: absolute;
+    top: 50%;
+    left: 1720px;
+    transform: translateY(-50%);
+}
+
+.sidewaysTxt {
+    color: white;
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+    white-space: nowrap;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.rightTxt31 {
+    position: absolute;
+    white-space: nowrap;
+    left: 1625px;
+    width:10px;
+    font-size:30px;
+    top: 11%; 
+}
+
+.day31 {
+    color: white;
+}
+
+.rightTxt1 {
+    position: absolute;
+    white-space: nowrap;
+    left: 1625px;
+    width:10px;
+    font-size:30px;
+    top: 85%; 
+}
+
+.day1 {
+    color: white;
+}
+
+.asteroidName {
+    clear: both;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}

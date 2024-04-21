@@ -1,0 +1,99 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./nusrat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+    <title>Ledger Launchpad</title>
+  </head>
+  <body>
+    <div>
+      <div id="asteroidContainer"></div>
+    </div>
+    <script src="backgroundCopy.js"></script> 
+
+    <h1>Ledger Launchpad</h1>
+
+    <div class="rectangle">
+      <button id="editButton">Click To Add Bill</button>
+      <form id="billForm" style="display: none;">
+        <label for="billName">Bill Name:</label>
+        <input type="text" id="billName" name="billName" required><br><br>
+      
+        <label for="billAmount">Bill Amount:</label>
+        <input type="number" id="billAmount" name="billAmount" required><br><br>
+      
+        <label for="dueDate">Due Date:</label>
+        <input type="number" id="dueDate" name="dueDate" required><br><br>
+      
+        <button id="submitButton" type="submit">Submit</button>
+      </form>
+      
+      <div id="billList"></div>
+
+      <div>
+        <div class="rightTxt31">
+          <p class="day31">Day 31</p>
+        </div>
+        <div class="rightTxt1">
+          <p class="day1">Day 1</p>
+        </div>
+        <div class="sidewaysContainer">
+          <div class="sidewaysTxt">
+              <p>Status</p>
+          </div>
+        </div>
+        <div class="statusContainer">
+          <div class="statusBar" id="progress"></div>
+        </div>
+      </div>
+
+
+      <script>
+        const editButton = document.getElementById('editButton');
+        const billForm = document.getElementById('billForm');
+        const billList = document.getElementById('billList');
+        const asteroidContainer = document.getElementById('asteroidContainer');
+
+        editButton.addEventListener('click', () => {
+          billForm.style.display = 'block';
+        });
+
+        billForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const billName = document.getElementById('billName').value;
+          const billAmount = document.getElementById('billAmount').value;
+          const billDueDate = document.getElementById('dueDate').value;
+
+          const newBill = document.createElement('p');
+          newBill.textContent = `${billName}: Amt: $${billAmount} Due: ${billDueDate}`;
+          billList.appendChild(newBill);
+
+          const asteroidContainer = document.getElementById('asteroidContainer');
+
+          const asteroidImg = document.createElement('img');
+          asteroidImg.src = 'asteroid.png';
+          asteroidImg.alt = 'Asteroid';
+          asteroidImg.classList.add('asteroidImg');
+          asteroidContainer.appendChild(asteroidImg);
+
+          const asteroidName = document.createElement('p');
+          asteroidName.textContent = `${billName}`;
+          asteroidName.classList.add('asteroidName');
+          asteroidContainer.appendChild(asteroidName);
+
+          billForm.reset();
+          billForm.style.display = 'none';
+        });
+
+      </script>
+    
+    </div>
+
+  </body>
+</html>

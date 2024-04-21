@@ -1,0 +1,613 @@
+body {
+  font-family: "Share Tech Mono", sans-serif;
+}
+
+a,
+button,
+input,
+select, h1,
+h2,
+h3,
+h4,
+h5,
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: none;
+text-decoration: none;
+appearance: none;
+background: none;
+
+-webkit-font-smoothing: antialiased;
+}
+
+.home-game-ui,
+.home-game-ui * {
+  box-sizing: border-box;
+}
+.home-game-ui {
+  background: #03001d;
+  height: 982px;
+  position: relative;
+  overflow: hidden;
+}
+.user {
+  position: absolute;
+  inset: 0;
+}
+
+.you, .user2 {
+  right: 100px;
+}
+
+.user2 {
+  background: #d9d9d9;
+  border-radius: 50%;
+  width: 69px;
+  height: 69px;
+  position: absolute;
+  top: 877px;
+}
+.you {
+  color: #ffffff;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  top: 903px;
+  width: 33px;
+  height: 27px;
+}
+
+.friend-1Txt {
+  color: #ffffff;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  right: 200px;
+  top: 946px;
+}
+.friend-1 {
+  background: #d9d9d9;
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  right: 200px;
+  top: 883px;
+}
+
+.asteroid-group {
+  position: absolute;
+  inset: 0;
+}
+.asteroid-5 {
+  width: 199px;
+  height: 199px;
+  position: absolute;
+  left: 988px;
+  top: 597px;
+  overflow: hidden;
+}
+.astroid-vectors {
+  width: 63.07%;
+  height: 61.43%;
+  position: absolute;
+  right: 18.47%;
+  left: 18.47%;
+  bottom: 19.28%;
+  top: 19.28%;
+  overflow: visible;
+}
+.bill-e {
+  position: absolute;
+  inset: 0;
+}
+.b {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 71.86%;
+  left: 20.6%;
+  width: 7.54%;
+  bottom: 79.3%;
+  top: 6.13%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(-33.964deg) scale(1, 1);
+}
+.i {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 61.2%;
+  left: 31.26%;
+  width: 7.54%;
+  bottom: 85.77%;
+  top: -0.34%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(-20.378deg) scale(1, 1);
+}
+.l {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 49.32%;
+  left: 43.15%;
+  width: 7.54%;
+  bottom: 89.56%;
+  top: -4.13%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(-6.793deg) scale(1, 1);
+}
+.l2 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 36.88%;
+  left: 55.59%;
+  width: 7.54%;
+  bottom: 90.45%;
+  top: -5.03%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(6.793deg) scale(1, 1);
+}
+.div {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 24.58%;
+  left: 67.89%;
+  width: 7.54%;
+  bottom: 88.4%;
+  top: -2.97%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(20.378deg) scale(1, 1);
+}
+.e {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 13.1%;
+  left: 79.36%;
+  width: 7.54%;
+  bottom: 83.51%;
+  top: 1.92%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(33.964deg) scale(1, 1);
+}
+.asteroid-4 {
+  width: 199px;
+  height: 198px;
+  position: absolute;
+  left: 644px;
+  top: 592px;
+  overflow: hidden;
+}
+.astroid-vectors2 {
+  width: 63.07%;
+  height: 61.43%;
+  position: absolute;
+  right: 18.47%;
+  left: 18.47%;
+  bottom: 19.28%;
+  top: 19.28%;
+  overflow: visible;
+}
+.bill-d {
+  position: absolute;
+  inset: 0;
+}
+.b2 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 69.35%;
+  left: 23.12%;
+  width: 7.54%;
+  bottom: 77.17%;
+  top: 8.18%;
+  height: 14.65%;
+  transform-origin: 0 0;
+  transform: rotate(-33.964deg) scale(1, 1);
+}
+.i2 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 58.69%;
+  left: 33.78%;
+  width: 7.54%;
+  bottom: 83.68%;
+  top: 1.67%;
+  height: 14.65%;
+  transform-origin: 0 0;
+  transform: rotate(-20.378deg) scale(1, 1);
+}
+.l3 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 46.8%;
+  left: 45.66%;
+  width: 7.54%;
+  bottom: 87.49%;
+  top: -2.13%;
+  height: 14.65%;
+  transform-origin: 0 0;
+  transform: rotate(-6.793deg) scale(1, 1);
+}
+.l4 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 34.36%;
+  left: 58.1%;
+  width: 7.54%;
+  bottom: 88.38%;
+  top: -3.03%;
+  height: 14.65%;
+  transform-origin: 0 0;
+  transform: rotate(6.793deg) scale(1, 1);
+}
+.div2 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 22.06%;
+  left: 70.4%;
+  width: 7.54%;
+  bottom: 86.32%;
+  top: -0.96%;
+  height: 14.65%;
+  transform-origin: 0 0;
+  transform: rotate(20.378deg) scale(1, 1);
+}
+.d {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 10.59%;
+  left: 81.87%;
+  width: 7.54%;
+  bottom: 81.41%;
+  top: 3.95%;
+  height: 14.65%;
+  transform-origin: 0 0;
+  transform: rotate(33.964deg) scale(1, 1);
+}
+.asteroid-3 {
+  width: 199px;
+  height: 199px;
+  position: absolute;
+  left: 1121px;
+  top: 244px;
+  overflow: hidden;
+}
+.astroid-vectors3 {
+  width: 63.07%;
+  height: 61.43%;
+  position: absolute;
+  right: 18.47%;
+  left: 18.47%;
+  bottom: 19.28%;
+  top: 19.28%;
+  overflow: visible;
+}
+.bill-c {
+  position: absolute;
+  inset: 0;
+}
+.c {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 13.1%;
+  left: 79.36%;
+  width: 7.54%;
+  bottom: 83.51%;
+  top: 1.92%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(33.964deg) scale(1, 1);
+}
+.asteroid-2 {
+  width: 199px;
+  height: 199px;
+  position: absolute;
+  left: 803px;
+  top: 250px;
+  overflow: hidden;
+}
+.astroid-vectors4 {
+  width: 63.07%;
+  height: 61.43%;
+  position: absolute;
+  right: 18.47%;
+  left: 18.47%;
+  bottom: 19.28%;
+  top: 19.28%;
+  overflow: visible;
+}
+.bill-b {
+  position: absolute;
+  inset: 0;
+}
+.b3 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 70.35%;
+  left: 22.11%;
+  width: 7.54%;
+  bottom: 76.28%;
+  top: 9.14%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(-33.964deg) scale(1, 1);
+}
+.i3 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 59.69%;
+  left: 32.77%;
+  width: 7.54%;
+  bottom: 82.76%;
+  top: 2.67%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(-20.378deg) scale(1, 1);
+}
+.l5 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 47.81%;
+  left: 44.65%;
+  width: 7.54%;
+  bottom: 86.55%;
+  top: -1.12%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(-6.793deg) scale(1, 1);
+}
+.l6 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 35.37%;
+  left: 57.09%;
+  width: 7.54%;
+  bottom: 87.44%;
+  top: -2.01%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(6.793deg) scale(1, 1);
+}
+.div3 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 23.07%;
+  left: 69.39%;
+  width: 7.54%;
+  bottom: 85.38%;
+  top: 0.05%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(20.378deg) scale(1, 1);
+}
+.b4 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 11.59%;
+  left: 80.87%;
+  width: 7.54%;
+  bottom: 65.92%;
+  top: 4.93%;
+  height: 29.15%;
+  transform-origin: 0 0;
+  transform: rotate(33.964deg) scale(1, 1);
+}
+.asteroid-1 {
+  width: 199px;
+  height: 199px;
+  position: absolute;
+  left: 493px;
+  top: 254px;
+  overflow: hidden;
+}
+.astroid-vectors5 {
+  width: 63.07%;
+  height: 61.43%;
+  position: absolute;
+  right: 18.47%;
+  left: 18.47%;
+  bottom: 19.28%;
+  top: 19.28%;
+  overflow: visible;
+}
+.bill-a {
+  position: absolute;
+  inset: 0;
+}
+.a {
+  color: #ffffff;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 11.59%;
+  left: 80.87%;
+  width: 7.54%;
+  bottom: 80.49%;
+  top: 4.93%;
+  height: 14.57%;
+  transform-origin: 0 0;
+  transform: rotate(33.964deg) scale(1, 1);
+}
+.bill-section {
+  position: absolute;
+  inset: 0;
+}
+.bill-frame {
+  width: 401px;
+  height: 993px;
+  position: absolute;
+  left: 0px;
+  top: -11px;
+}
+.bill-list-bg {
+  background: #d9d9d9;
+  width: 401px;
+  height: 1024px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.bill-list {
+  color: #000000;
+  text-align: left;
+  font-size: 48px;
+  font-weight: 400;
+  position: absolute;
+  left: 21px;
+  top: 23px;
+  width: 285px;
+  height: 49px;
+}
+.collpase-arrrows {
+  height: auto;
+  position: absolute;
+  left: 336px;
+  top: 37px;
+  overflow: visible;
+}
+.billList {
+  color: #000000;
+  text-align: left;
+  font-size: 48px;
+  font-weight: 400;
+  position: absolute;
+  left: 21px;
+  top: 102px;
+  width: 259px;
+  height: 320px;
+}
+.day-1 {
+  color: #ffffff;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 200px;
+  bottom: 130px;
+  width: 115px;
+  height: 32px;
+}
+
+.day-31 {
+  color: #ffffff;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 200px;
+  top: 135px;
+  width: 115px;
+  height: 32px;
+}
+
+.ledger-launchpad {
+  color: #ffffff;
+  text-align: left;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 444px;
+  top: 26px;
+  width: 668px;
+  height: 77px;
+}
+
+.status {
+  color: #ffffff;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 5px;
+  top: 392px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+
+.statusContainer {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  right: 120px; /* Distance from right side of the screen */
+  transform: translateY(-50%); /* Center vertically */
+  width: 40px; /* Width of the container */
+  height: 700px; /* Height of the container */
+  border: 1px solid #ccc;
+}
+
+.statusBar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  transform-origin: bottom; /* Rotate around the bottom */
+  transform: scaleY(0); /* Initially scale to 0 height */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for height change */
+}
