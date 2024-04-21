@@ -74,11 +74,18 @@
           newBill.textContent = `${billName}: Amt: $${billAmount} Due: ${billDueDate}`;
           billList.appendChild(newBill);
 
+          const asteroidContainer = document.getElementById('asteroidContainer');
+
           const asteroidImg = document.createElement('img');
           asteroidImg.src = 'asteroid.png';
           asteroidImg.alt = 'Asteroid';
           asteroidImg.classList.add('asteroidImg');
           asteroidContainer.appendChild(asteroidImg);
+
+          const asteroidName = document.createElement('p');
+          asteroidName.textContent = `${billName}`;
+          asteroidName.classList.add('asteroidName');
+          asteroidContainer.appendChild(asteroidName);
 
           billForm.reset();
           billForm.style.display = 'none';

@@ -53,12 +53,14 @@ h1 {
     top: 100px; 
     left: 500px; 
     z-index: 1; 
+    overflow: hidden;
 }
 
 .asteroidImg {
     width: 275px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     padding: 20px;
+    margin-right: 10px;
 }
 
 .statusContainer {
@@ -114,6 +116,15 @@ h1 {
     font-size:30px;
     top: 85%; 
 }
+
 .day1 {
     color: white;
+}
+
+.asteroidName {
+    clear: both;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
 }
