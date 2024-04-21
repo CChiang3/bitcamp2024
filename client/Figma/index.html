@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML> 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./vars.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./nusrat.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
     <title>Ledger Launchpad</title>
   </head>
   <body>
+    <div>
+      <div id="asteroidContainer"></div>
+    </div>
     <script src="backgroundCopy.js"></script> 
 
     <h1>Ledger Launchpad</h1>
@@ -34,12 +34,13 @@
         <button id="submitButton" type="submit">Submit</button>
       </form>
       
-      <div id="billList"></div> <!-- Container for bills -->
+      <div id="billList"></div>
 
       <script>
         const editButton = document.getElementById('editButton');
         const billForm = document.getElementById('billForm');
         const billList = document.getElementById('billList');
+        const asteroidContainer = document.getElementById('asteroidContainer');
 
         editButton.addEventListener('click', () => {
           billForm.style.display = 'block';
@@ -53,7 +54,13 @@
 
           const newBill = document.createElement('p');
           newBill.textContent = `${billName}: Amt: $${billAmount} Due: ${billDueDate}`;
-          billList.appendChild(newBill); // Append new bill to billList container
+          billList.appendChild(newBill);
+
+          const asteroidImg = document.createElement('img');
+          asteroidImg.src = 'asteroid.png';
+          asteroidImg.alt = 'Asteroid';
+          asteroidImg.classList.add('asteroidImg');
+          asteroidContainer.appendChild(asteroidImg);
 
           billForm.reset();
           billForm.style.display = 'none';

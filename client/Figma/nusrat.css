@@ -47,3 +47,16 @@ h1 {
     top: 100px;
     font-size: 25px;
 }
+
+#asteroidContainer {
+    position: absolute;
+    top: 100px; 
+    left: 500px; 
+    z-index: 1; 
+}
+
+.asteroidImg {
+    width: 275px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 20px;
+}
