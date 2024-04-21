@@ -31,15 +31,15 @@ router.get("/auth/token", async (req, res) => {
 
 
 router.post("/invoice", requireAuth, async (req, res) => {
-    const userEmail = req.body.userEmail;
+    const userEmail = req.data.userEmail;
 
     const companyName = req.user.name;
     const companyURL = req.user.url;
 
-    const billName = req.body.billName;
-    const billDescription = req.body.billDescription;
-    const billDate = req.body.billDate;
-    const billAmount = req.body.billAmount;
+    const billName = req.data.billName;
+    const billDescription = req.data.billDescription;
+    const billDate = req.data.billDate;
+    const billAmount = req.data.billAmount;
 
     console.log(userEmail, companyName, companyURL, billName, billDescription, billDate, billAmount);
 
@@ -76,5 +76,24 @@ router.post("/invoice", requireAuth, async (req, res) => {
         uniqifier: billUniquifier
     });
 });
+
+router.post("/create", async (req, res) => {
+    const email = req.body.email
+    const username = req.body.username;
+    const password = req.body.password;
+
+    console.log(email, username, password);
+
+    const user = new User({
+        email: email,
+        username: username,
+        password: password
+    });
+    await user.save();
+
+    return res.status(200).json({
+        message: "user created"
+    });
+})
 
 module.exports = router;
